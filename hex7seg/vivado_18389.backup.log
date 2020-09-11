@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Sep 11 21:41:30 2020
+# Process ID: 18389
+# Current directory: /home/kawamata/git/nexysa7prj/hex7seg
+# Command line: vivado
+# Log file: /home/kawamata/git/nexysa7prj/hex7seg/vivado.log
+# Journal file: /home/kawamata/git/nexysa7prj/hex7seg/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project hex7seg /home/kawamata/git/nexysa7prj/hex7seg/hex7seg -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+file mkdir /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new
+close [ open /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv w ]
+add_files /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv
+set_property file_type Verilog [get_files  /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv]
+add_files -fileset constrs_1 -norecurse /home/kawamata/git/nexysa7prj/a7.xdc
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 11 22:09:31 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Sep 11 22:10:15 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 11 22:11:09 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:13:42
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+[?1034h
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-14:41:48
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF4C5A
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/impl_1/hex7seg_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/impl_1/hex7seg_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Sep 11 22:15:30 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Sep 11 22:16:12 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8122.098 ; gain = 0.000 ; free physical = 6918 ; free virtual = 12603
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/kawamata/git/nexysa7prj/a7.xdc]
+Finished Parsing XDC File [/home/kawamata/git/nexysa7prj/a7.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8202.887 ; gain = 0.000 ; free physical = 6828 ; free virtual = 12513
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 8364.930 ; gain = 458.000 ; free physical = 6607 ; free virtual = 12299
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Sep 11 22:17:09 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: hex7seg_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8894.352 ; gain = 166.746 ; free physical = 6369 ; free virtual = 12058
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hex7seg_top' [/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv:3]
+WARNING: [Synth 8-151] case item 4'b1101 is unreachable [/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv:49]
+WARNING: [Synth 8-151] case item 4'b1101 is unreachable [/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv:49]
+WARNING: [Synth 8-3848] Net ledenc in module/entity hex7seg_top does not have driver. [/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg_top' (1#1) [/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.srcs/sources_1/new/hex7seg_top.sv:3]
+WARNING: [Synth 8-3331] design hex7seg_top has unconnected port AN[7]
+WARNING: [Synth 8-3331] design hex7seg_top has unconnected port AN[6]
+WARNING: [Synth 8-3331] design hex7seg_top has unconnected port AN[5]
+WARNING: [Synth 8-3331] design hex7seg_top has unconnected port AN[4]
+WARNING: [Synth 8-3331] design hex7seg_top has unconnected port AN[3]
+WARNING: [Synth 8-3331] design hex7seg_top has unconnected port AN[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 8929.289 ; gain = 201.684 ; free physical = 6272 ; free virtual = 11961
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8944.133 ; gain = 216.527 ; free physical = 6075 ; free virtual = 11764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8944.133 ; gain = 216.527 ; free physical = 6075 ; free virtual = 11764
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8944.133 ; gain = 0.000 ; free physical = 6068 ; free virtual = 11757
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kawamata/git/nexysa7prj/a7.xdc]
+Finished Parsing XDC File [/home/kawamata/git/nexysa7prj/a7.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9026.953 ; gain = 0.000 ; free physical = 5996 ; free virtual = 11687
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9050.965 ; gain = 323.359 ; free physical = 6016 ; free virtual = 11706
+5 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9050.965 ; gain = 323.359 ; free physical = 6016 ; free virtual = 11706
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/hex7seg/hex7seg/hex7seg.runs/impl_1/hex7seg_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1

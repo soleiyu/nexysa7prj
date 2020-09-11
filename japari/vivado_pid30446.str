@@ -1,0 +1,501 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 30446
+License: Customer
+
+Current time: 	Sun Sep 06 21:10:11 JST 2020
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Ubuntu
+OS Version: 5.4.0-45-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 3840x2160
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 408 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kawamata
+User home directory: /home/kawamata
+User working directory: /home/kawamata/git/nexysa7prj/japari
+User country: 	JP
+User language: 	ja
+User locale: 	ja_JP
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/kawamata/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/kawamata/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/kawamata/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/kawamata/git/nexysa7prj/japari/vivado.log
+Vivado journal file location: 	/home/kawamata/git/nexysa7prj/japari/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-30446-rootage
+
+Xilinx Environment Variables
+----------------------------
+INTELFPGAOCLSDKROOT: /home/kawamata/intelFPGA_pro/20.1/hld
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	247 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 887 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 843 MB. GUI used memory: 59 MB. Current time: 9/6/20, 9:10:13 PM JST
+setFileChooser("/home/kawamata/git/nexysa7prj/japari/jagari/jagari.xpr");
+// Opening Vivado Project: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 123 MB (+126241kb) [00:00:16]
+// [Engine Memory]: 879 MB (+770271kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  1910 ms.
+// Tcl Message: open_project /home/kawamata/git/nexysa7prj/japari/jagari/jagari.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'. 
+// Project name: jagari; location: /home/kawamata/git/nexysa7prj/japari/jagari; part: xc7a100tcsg324-1
+// 'i' command handler elapsed time: 8 seconds
+dismissDialog("Open Project"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 932 MB (+9481kb) [00:00:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 984 MB (+5104kb) [00:00:23]
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ai (cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_2 -jobs 4 
+// Tcl Message: [Sun Sep  6 21:10:31 2020] Launched synth_2... Run output will be captured here: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/synth_2/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 987 MB. GUI used memory: 64 MB. Current time: 9/6/20, 9:10:53 PM JST
+// Elapsed time: 41 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_2 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a100tcsg324-1 ;  ; Default settings for Implementation.", 3, "impl_2", 0, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_2) elapsed time: 0.5s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_2 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a100tcsg324-1 ;  ; Default settings for Implementation.", 3, "impl_2", 0, false, false, false, false, true, false); // az (O, cr) - Popup Trigger
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_2 -jobs 4 
+// Tcl Message: [Sun Sep  6 21:11:23 2020] Launched impl_2... Run output will be captured here: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/impl_2/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, a7.xdc]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, a7.xdc]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,036 MB. GUI used memory: 70 MB. Current time: 9/6/20, 9:11:43 PM JST
+// [Engine Memory]: 1,036 MB (+3428kb) [00:01:45]
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 32 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Sep  6 21:12:31 2020] Launched impl_2... Run output will be captured here: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 75 MB. Current time: 9/6/20, 9:13:18 PM JST
+selectButton(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Hardware_auto_connect_target"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:13:42     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: [?1034h  ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-14:41:48     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1559 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF4C5A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/impl_2/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,143 MB (+1105884kb) [00:03:18]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bB (cr)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true); // t (O, cr) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) ; Programmed", 2, "xc7a100t_0 (1)", 0, true, false, false, false, true, false); // t (O, cr) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/impl_2/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [GUI Memory]: 130 MB (+1450kb) [00:03:28]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 53 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210292ABF4C5A (1) ; Open", 1, "xilinx_tcf/Digilent/210292ABF4C5A (1)", 0, true); // t (O, cr) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,207 MB. GUI used memory: 79 MB. Current time: 9/6/20, 9:14:38 PM JST
+// Elapsed time: 16 seconds
+selectCodeEditor("japari_top.sv", 233, 143); // ch (w, cr)
+selectCodeEditor("japari_top.sv", 128, 58); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("japari_top.sv", 309, 852); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aP, cr)
+// Elapsed time: 26 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ai (cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_2 -jobs 4 
+// Tcl Message: [Sun Sep  6 21:16:23 2020] Launched synth_2... Run output will be captured here: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/synth_2/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [Engine Memory]: 2,260 MB (+10716kb) [00:06:28]
+// I (cr): Settings: addNotify
+// [GUI Memory]: 140 MB (+2923kb) [00:06:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  2102 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,262 MB. GUI used memory: 98 MB. Current time: 9/6/20, 9:16:33 PM JST
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (I)
+dismissDialog("Settings"); // I (cr)
+// [GUI Memory]: 177 MB (+31727kb) [00:06:32]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+// [GUI Memory]: 186 MB (+611kb) [00:06:38]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_2 -jobs 4 
+// Tcl Message: [Sun Sep  6 21:17:23 2020] Launched impl_2... Run output will be captured here: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/impl_2/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 47 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv), bpm : tsqwGen (tsqwGen.sv)]", 12, false); // B (F, cr)
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Sep  6 21:18:28 2020] Launched impl_2... Run output will be captured here: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/impl_2/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv), bpm : tsqwGen (tsqwGen.sv)]", 12, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv), bpm : tsqwGen (tsqwGen.sv)]", 12, false, false, false, false, false, true); // B (F, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,336 MB. GUI used memory: 96 MB. Current time: 9/6/20, 9:18:38 PM JST
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "japari_top.sv", 2); // i (h, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/impl_2/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "japari_top.sv", 1); // i (h, cr)
+// Elapsed time: 82 seconds
+selectButton(PAResourceAtoD.AbstractFileView_CLOSE, (String) null); // k (B, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tsqwGen.sv", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "japari_top.sv", 1); // i (h, cr)
+// Elapsed time: 37 seconds
+selectCodeEditor("japari_top.sv", 291, 857); // ch (w, cr)
+selectCodeEditor("japari_top.sv", 115, 429); // ch (w, cr)
+// Elapsed time: 26 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tsqwGen.sv", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "japari_top.sv", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "a7.xdc", 0); // i (h, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv), p0 : player (player.sv)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv), p0 : player (player.sv)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "player.sv", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tsqwGen.sv", 3); // i (h, cr)
+// [Engine Memory]: 2,419 MB (+48488kb) [00:13:13]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "japari_top.sv", 2); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,364 MB. GUI used memory: 99 MB. Current time: 9/6/20, 9:23:18 PM JST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "player.sv", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "japari_top.sv", 2); // i (h, cr)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv), j1 : japari1 (japari.sv)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (japari_top.sv), j1 : japari1 (japari.sv)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "player.sv", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tsqwGen.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "japari_top.sv", 2); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 217 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bJ (cr): Implementation is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a (bJ)
+// bB (cr):  Open Implemented Design : addNotify
+dismissDialog("Implementation is Out-of-date"); // bJ (cr)
+// Tcl Message: open_run impl_2 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 100 MB. Current time: 9/6/20, 9:27:53 PM JST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,190 MB. GUI used memory: 100 MB. Current time: 9/6/20, 9:28:06 PM JST
+// [Engine Memory]: 3,192 MB (+683173kb) [00:18:03]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /tools/Xilinx/Vivado/2019.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.7s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1621 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8087.594 ; gain = 0.000 ; free physical = 5719 ; free virtual = 12878 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1010 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are: 
+// Tcl Message:   general.maxThreads 
+// Tcl Message: INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 8668.074 ; gain = 0.000 ; free physical = 5173 ; free virtual = 12336 
+// Tcl Message: Restored from archive | CPU: 0.220000 secs | Memory: 5.692345 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 8668.074 ; gain = 0.000 ; free physical = 5173 ; free virtual = 12336 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8668.074 ; gain = 0.000 ; free physical = 5173 ; free virtual = 12336 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 8862.355 ; gain = 985.922 ; free physical = 5093 ; free virtual = 12257 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 197 MB (+1587kb) [00:18:07]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1119 ms.
+// [Engine Memory]: 3,355 MB (+3733kb) [00:18:08]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 23 seconds
+// Elapsed time: 21 seconds
+dismissDialog("Open Implemented Design"); // bB (cr)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify

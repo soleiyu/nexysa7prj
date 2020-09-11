@@ -1,0 +1,548 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Sep  6 21:02:15 2020
+# Process ID: 28388
+# Current directory: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/synth_1
+# Command line: vivado -log beeper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source beeper.tcl
+# Log file: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/synth_1/beeper.vds
+# Journal file: /home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source beeper.tcl -notrace
+Command: synth_design -top beeper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28407 
+WARNING: [Synth 8-2292] literal value truncated to fit in 8 bits [/home/kawamata/git/nexysa7prj/japari/japari.sv:514]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.418 ; gain = 206.652 ; free physical = 6695 ; free virtual = 13808
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'beeper' [/home/kawamata/git/nexysa7prj/japari/mbsp.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'japari1' [/home/kawamata/git/nexysa7prj/japari/japari.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'japari1' (1#1) [/home/kawamata/git/nexysa7prj/japari/japari.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'japari2' [/home/kawamata/git/nexysa7prj/japari/japari.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'japari2' (2#1) [/home/kawamata/git/nexysa7prj/japari/japari.sv:378]
+INFO: [Synth 8-6157] synthesizing module 'japari3' [/home/kawamata/git/nexysa7prj/japari/japari.sv:697]
+INFO: [Synth 8-6155] done synthesizing module 'japari3' (3#1) [/home/kawamata/git/nexysa7prj/japari/japari.sv:697]
+INFO: [Synth 8-6157] synthesizing module 'player' [/home/kawamata/git/nexysa7prj/japari/player.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'player' (4#1) [/home/kawamata/git/nexysa7prj/japari/player.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'tscaler' [/home/kawamata/git/nexysa7prj/japari/scaler.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'tscaler' (5#1) [/home/kawamata/git/nexysa7prj/japari/scaler.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'tsqwGen' [/home/kawamata/git/nexysa7prj/japari/tsqwGen.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'tsqwGen' (6#1) [/home/kawamata/git/nexysa7prj/japari/tsqwGen.sv:3]
+WARNING: [Synth 8-7023] instance 'bpm' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/mbsp.sv:39]
+WARNING: [Synth 8-7023] instance 'msw0' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/mbsp.sv:40]
+WARNING: [Synth 8-7023] instance 'msw1' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/mbsp.sv:41]
+WARNING: [Synth 8-7023] instance 'msw2' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/mbsp.sv:42]
+WARNING: [Synth 8-3848] Net gpio_1 in module/entity beeper does not have driver. [/home/kawamata/git/nexysa7prj/japari/mbsp.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'beeper' (7#1) [/home/kawamata/git/nexysa7prj/japari/mbsp.sv:1]
+WARNING: [Synth 8-3917] design beeper has port gpio_0[9] driven by constant 0
+WARNING: [Synth 8-3917] design beeper has port gpio_0[7] driven by constant 0
+WARNING: [Synth 8-3331] design beeper has unconnected port led[7]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[6]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[5]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[4]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[3]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[35]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[34]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[33]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[32]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[31]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[30]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[29]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[28]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[27]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[26]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[25]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[24]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[23]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[22]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[21]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[20]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[19]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[18]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[17]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[16]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[15]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[14]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[13]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[12]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[11]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[10]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[8]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[6]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[4]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[2]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[0]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[35]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[34]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[33]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[32]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[31]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[30]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[29]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[28]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[27]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[26]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[25]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[24]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[23]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[22]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[21]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[20]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[19]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[18]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[17]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[16]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[15]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[14]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[13]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[12]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[11]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[10]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[9]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[8]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[7]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[6]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[5]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[4]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[3]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[2]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[1]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_1[0]
+WARNING: [Synth 8-3331] design beeper has unconnected port sw[3]
+WARNING: [Synth 8-3331] design beeper has unconnected port sw[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1871.293 ; gain = 245.527 ; free physical = 6737 ; free virtual = 13848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1886.137 ; gain = 260.371 ; free physical = 6736 ; free virtual = 13847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1886.137 ; gain = 260.371 ; free physical = 6736 ; free virtual = 13847
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1886.137 ; gain = 0.000 ; free physical = 6729 ; free virtual = 13840
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kawamata/git/nexysa7prj/japari/a7.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUD_PWM'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUD_SD'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:180]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:180]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/kawamata/git/nexysa7prj/japari/a7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kawamata/git/nexysa7prj/japari/a7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/beeper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/beeper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.934 ; gain = 0.000 ; free physical = 6648 ; free virtual = 13759
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.934 ; gain = 0.000 ; free physical = 6648 ; free virtual = 13759
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.934 ; gain = 390.168 ; free physical = 6709 ; free virtual = 13821
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.934 ; gain = 390.168 ; free physical = 6709 ; free virtual = 13821
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.934 ; gain = 390.168 ; free physical = 6709 ; free virtual = 13821
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "notes" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notes" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notes" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2015.934 ; gain = 390.168 ; free physical = 6693 ; free virtual = 13806
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      1 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 9     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 3     
+	 310 Input     16 Bit        Muxes := 1     
+	 249 Input     16 Bit        Muxes := 1     
+	 443 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module japari1 
+Detailed RTL Component Info : 
++---Muxes : 
+	 310 Input     16 Bit        Muxes := 1     
+Module japari2 
+Detailed RTL Component Info : 
++---Muxes : 
+	 249 Input     16 Bit        Muxes := 1     
+Module japari3 
+Detailed RTL Component Info : 
++---Muxes : 
+	 443 Input     16 Bit        Muxes := 1     
+Module player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+Module tscaler 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+Module tsqwGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design beeper has port gpio_0[9] driven by constant 0
+WARNING: [Synth 8-3917] design beeper has port gpio_0[7] driven by constant 0
+WARNING: [Synth 8-3331] design japari3 has unconnected port count[9]
+WARNING: [Synth 8-3331] design japari2 has unconnected port count[9]
+WARNING: [Synth 8-3331] design japari1 has unconnected port count[9]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[7]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[6]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[5]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[4]
+WARNING: [Synth 8-3331] design beeper has unconnected port led[3]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[35]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[34]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[33]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[32]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[31]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[30]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[29]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[28]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[27]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[26]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[25]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[24]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[23]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[22]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[21]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[20]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[19]
+WARNING: [Synth 8-3331] design beeper has unconnected port gpio_0[18]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'p0/outlength_reg[6]' (FDE) to 'p0/outlength_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p0/\outlength_reg[7] )
+INFO: [Synth 8-3886] merging instance 'p1/outlength_reg[6]' (FDE) to 'p1/outlength_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p1/\outlength_reg[7] )
+INFO: [Synth 8-3886] merging instance 'p2/outlength_reg[4]' (FDE) to 'p2/outlength_reg[7]'
+INFO: [Synth 8-3886] merging instance 'p2/outlength_reg[5]' (FDE) to 'p2/outlength_reg[7]'
+INFO: [Synth 8-3886] merging instance 'p2/outlength_reg[6]' (FDE) to 'p2/outlength_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p2/\outlength_reg[7] )
+INFO: [Synth 8-3886] merging instance 'p1/outcache_reg[6]' (FDE) to 'p1/outcache_reg[7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2015.934 ; gain = 390.168 ; free physical = 6661 ; free virtual = 13779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|tscaler     | tscl       | 128x19        | LUT            | 
+|tscaler     | tscl       | 128x19        | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2015.934 ; gain = 390.168 ; free physical = 6564 ; free virtual = 13684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2015.934 ; gain = 390.168 ; free physical = 6564 ; free virtual = 13683
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6552 ; free virtual = 13672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6553 ; free virtual = 13670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6553 ; free virtual = 13671
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6554 ; free virtual = 13671
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6554 ; free virtual = 13671
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6565 ; free virtual = 13682
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6565 ; free virtual = 13682
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   922|
+|3     |LUT1   |    21|
+|4     |LUT2   |  1420|
+|5     |LUT3   |    92|
+|6     |LUT4   |   678|
+|7     |LUT5   |   251|
+|8     |LUT6   |  1367|
+|9     |MUXF7  |    74|
+|10    |MUXF8  |    16|
+|11    |FDRE   |   263|
+|12    |FDSE   |     3|
+|13    |IBUF   |     3|
+|14    |OBUF   |     8|
+|15    |OBUFT  |    72|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |  5192|
+|2     |  bpm    |tsqwGen   |   431|
+|3     |  msw0   |tsqwGen_0 |  1323|
+|4     |  msw1   |tsqwGen_1 |  1286|
+|5     |  msw2   |tsqwGen_2 |  1323|
+|6     |  p0     |player    |   240|
+|7     |  p1     |player_3  |   218|
+|8     |  p2     |player_4  |   283|
+|9     |  tr0    |tscaler   |     1|
+|10    |  tr1    |tscaler_5 |     1|
+|11    |  tr2    |tscaler_6 |     1|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2023.941 ; gain = 398.176 ; free physical = 6565 ; free virtual = 13682
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2023.941 ; gain = 268.379 ; free physical = 6616 ; free virtual = 13734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2023.949 ; gain = 398.176 ; free physical = 6616 ; free virtual = 13734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2023.949 ; gain = 0.000 ; free physical = 6686 ; free virtual = 13803
+INFO: [Netlist 29-17] Analyzing 1012 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.910 ; gain = 0.000 ; free physical = 6644 ; free virtual = 13746
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 128 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2026.910 ; gain = 555.430 ; free physical = 6776 ; free virtual = 13879
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.910 ; gain = 0.000 ; free physical = 6776 ; free virtual = 13879
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/synth_1/beeper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file beeper_utilization_synth.rpt -pb beeper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  6 21:02:56 2020...

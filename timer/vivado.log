@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Sep  6 17:21:27 2020
+# Process ID: 4677
+# Current directory: /home/kawamata/git/nexysa7prj/timer
+# Command line: vivado
+# Log file: /home/kawamata/git/nexysa7prj/timer/vivado.log
+# Journal file: /home/kawamata/git/nexysa7prj/timer/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/kawamata/git/nexysa7prj/timer/timer1/timer1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 17:21:55 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:9]
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:10]
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:11]
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:12]
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:13]
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:14]
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:15]
+WARNING: [Synth 8-6901] identifier 'rseg' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:16]
+WARNING: [Synth 8-6901] identifier 'lpos' is used before its declaration [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:18]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6934.012 ; gain = 205.832 ; free physical = 9515 ; free virtual = 14626
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:1]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-226] default block is never used [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:63]
+INFO: [Synth 8-6155] done synthesizing module 'top' (1#1) [/home/kawamata/git/nexysa7prj/timer/timer_top.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 6971.949 ; gain = 243.770 ; free physical = 9557 ; free virtual = 14671
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6986.793 ; gain = 258.613 ; free physical = 9552 ; free virtual = 14666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6986.793 ; gain = 258.613 ; free physical = 9552 ; free virtual = 14666
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6986.793 ; gain = 0.000 ; free physical = 9545 ; free virtual = 14659
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kawamata/git/nexysa7prj/a7.xdc]
+Finished Parsing XDC File [/home/kawamata/git/nexysa7prj/a7.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7106.559 ; gain = 0.000 ; free physical = 9473 ; free virtual = 14586
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 7141.203 ; gain = 413.023 ; free physical = 9390 ; free virtual = 14494
+14 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 7141.203 ; gain = 613.047 ; free physical = 9390 ; free virtual = 14494
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:13:42
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+[?1034h
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-14:41:48
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF4C5A
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 17:26:55 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep  6 17:27:37 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 17:28:30 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 17:32:28 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep  6 17:36:01 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 17:38:35 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 17:50:32 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 17:51:31 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep  6 17:52:15 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 17:53:16 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 17:56:07 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep  6 17:57:18 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 17:58:13 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 18:00:14 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep  6 18:01:05 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 18:01:59 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 18:05:09 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep  6 18:06:19 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 18:07:13 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Sep  6 18:10:42 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Sep  6 18:11:26 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Sep  6 18:12:18 2020] Launched impl_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/kawamata/git/nexysa7prj/timer/timer1/timer1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  6 19:47:17 2020...

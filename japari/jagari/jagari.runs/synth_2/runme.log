@@ -1,0 +1,447 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1124 
+WARNING: [Synth 8-2292] literal value truncated to fit in 8 bits [/home/kawamata/git/nexysa7prj/japari/japari.sv:514]
+WARNING: [Synth 8-6901] identifier 'sd0' is used before its declaration [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:12]
+WARNING: [Synth 8-6901] identifier 'sd1' is used before its declaration [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:12]
+WARNING: [Synth 8-6901] identifier 'sd2' is used before its declaration [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:12]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.520 ; gain = 206.652 ; free physical = 5312 ; free virtual = 12461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'japari1' [/home/kawamata/git/nexysa7prj/japari/japari.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'japari1' (1#1) [/home/kawamata/git/nexysa7prj/japari/japari.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'japari2' [/home/kawamata/git/nexysa7prj/japari/japari.sv:378]
+INFO: [Synth 8-6155] done synthesizing module 'japari2' (2#1) [/home/kawamata/git/nexysa7prj/japari/japari.sv:378]
+INFO: [Synth 8-6157] synthesizing module 'japari3' [/home/kawamata/git/nexysa7prj/japari/japari.sv:697]
+INFO: [Synth 8-6155] done synthesizing module 'japari3' (3#1) [/home/kawamata/git/nexysa7prj/japari/japari.sv:697]
+INFO: [Synth 8-6157] synthesizing module 'player' [/home/kawamata/git/nexysa7prj/japari/player.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'player' (4#1) [/home/kawamata/git/nexysa7prj/japari/player.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'tscaler' [/home/kawamata/git/nexysa7prj/japari/scaler.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'tscaler' (5#1) [/home/kawamata/git/nexysa7prj/japari/scaler.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'tsqwGen' [/home/kawamata/git/nexysa7prj/japari/tsqwGen.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'tsqwGen' (6#1) [/home/kawamata/git/nexysa7prj/japari/tsqwGen.sv:3]
+WARNING: [Synth 8-7023] instance 'bpm' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:59]
+WARNING: [Synth 8-7023] instance 'msw0' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:60]
+WARNING: [Synth 8-7023] instance 'msw1' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:61]
+WARNING: [Synth 8-7023] instance 'msw2' of module 'tsqwGen' has 5 connections declared, but only 4 given [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:62]
+INFO: [Synth 8-6155] done synthesizing module 'top' (7#1) [/home/kawamata/git/nexysa7prj/japari/japari_top.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1871.426 ; gain = 245.559 ; free physical = 5351 ; free virtual = 12499
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1886.270 ; gain = 260.402 ; free physical = 5356 ; free virtual = 12504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1886.270 ; gain = 260.402 ; free physical = 5356 ; free virtual = 12504
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1886.270 ; gain = 0.000 ; free physical = 5371 ; free virtual = 12519
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kawamata/git/nexysa7prj/japari/a7.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/kawamata/git/nexysa7prj/japari/a7.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/kawamata/git/nexysa7prj/japari/a7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kawamata/git/nexysa7prj/japari/a7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2017.066 ; gain = 0.000 ; free physical = 5291 ; free virtual = 12441
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2017.066 ; gain = 0.000 ; free physical = 5291 ; free virtual = 12441
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2017.066 ; gain = 391.199 ; free physical = 5331 ; free virtual = 12485
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2017.066 ; gain = 391.199 ; free physical = 5331 ; free virtual = 12485
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2017.066 ; gain = 391.199 ; free physical = 5331 ; free virtual = 12485
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "notes" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notes" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notes" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2017.066 ; gain = 391.199 ; free physical = 5330 ; free virtual = 12484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 5     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 9     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 3     
+	 310 Input     16 Bit        Muxes := 1     
+	 249 Input     16 Bit        Muxes := 1     
+	 443 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module japari1 
+Detailed RTL Component Info : 
++---Muxes : 
+	 310 Input     16 Bit        Muxes := 1     
+Module japari2 
+Detailed RTL Component Info : 
++---Muxes : 
+	 249 Input     16 Bit        Muxes := 1     
+Module japari3 
+Detailed RTL Component Info : 
++---Muxes : 
+	 443 Input     16 Bit        Muxes := 1     
+Module player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+Module tscaler 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+Module tsqwGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design japari3 has unconnected port count[9]
+WARNING: [Synth 8-3331] design japari2 has unconnected port count[9]
+WARNING: [Synth 8-3331] design japari1 has unconnected port count[9]
+INFO: [Synth 8-3886] merging instance 'p2/outlength_reg[4]' (FDE) to 'p2/outlength_reg[7]'
+INFO: [Synth 8-3886] merging instance 'p2/outlength_reg[5]' (FDE) to 'p2/outlength_reg[7]'
+INFO: [Synth 8-3886] merging instance 'p2/outlength_reg[6]' (FDE) to 'p2/outlength_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p2/\outlength_reg[7] )
+INFO: [Synth 8-3886] merging instance 'p0/outlength_reg[6]' (FDE) to 'p0/outlength_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p0/\outlength_reg[7] )
+INFO: [Synth 8-3886] merging instance 'p1/outlength_reg[6]' (FDE) to 'p1/outlength_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p1/\outlength_reg[7] )
+INFO: [Synth 8-3886] merging instance 'p1/outcache_reg[6]' (FDE) to 'p1/outcache_reg[7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2017.066 ; gain = 391.199 ; free physical = 5316 ; free virtual = 12459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|tscaler     | tscl       | 128x19        | LUT            | 
+|tscaler     | tscl       | 128x19        | LUT            | 
+|tscaler     | tscl       | 128x19        | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2017.066 ; gain = 391.199 ; free physical = 5198 ; free virtual = 12343
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2017.066 ; gain = 391.199 ; free physical = 5193 ; free virtual = 12341
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2018.074 ; gain = 392.207 ; free physical = 5189 ; free virtual = 12338
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.012 ; gain = 398.145 ; free physical = 5187 ; free virtual = 12335
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.012 ; gain = 398.145 ; free physical = 5187 ; free virtual = 12336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.012 ; gain = 398.145 ; free physical = 5182 ; free virtual = 12333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.012 ; gain = 398.145 ; free physical = 5182 ; free virtual = 12333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.012 ; gain = 398.145 ; free physical = 5182 ; free virtual = 12333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.012 ; gain = 398.145 ; free physical = 5182 ; free virtual = 12333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |   922|
+|3     |LUT1   |    22|
+|4     |LUT2   |  1422|
+|5     |LUT3   |    92|
+|6     |LUT4   |   678|
+|7     |LUT5   |   252|
+|8     |LUT6   |  1367|
+|9     |MUXF7  |    74|
+|10    |MUXF8  |    16|
+|11    |FDRE   |   266|
+|12    |FDSE   |     3|
+|13    |IBUF   |     4|
+|14    |OBUF   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |  5123|
+|2     |  bpm    |tsqwGen   |   431|
+|3     |  msw0   |tsqwGen_0 |  1323|
+|4     |  msw1   |tsqwGen_1 |  1287|
+|5     |  msw2   |tsqwGen_2 |  1323|
+|6     |  p0     |player    |   240|
+|7     |  p1     |player_3  |   218|
+|8     |  p2     |player_4  |   283|
+|9     |  tr0    |tscaler   |     1|
+|10    |  tr1    |tscaler_5 |     1|
+|11    |  tr2    |tscaler_6 |     1|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.012 ; gain = 398.145 ; free physical = 5182 ; free virtual = 12333
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2024.012 ; gain = 267.348 ; free physical = 5236 ; free virtual = 12386
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2024.020 ; gain = 398.145 ; free physical = 5236 ; free virtual = 12386
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2024.020 ; gain = 0.000 ; free physical = 5304 ; free virtual = 12454
+INFO: [Netlist 29-17] Analyzing 1012 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.980 ; gain = 0.000 ; free physical = 5252 ; free virtual = 12401
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 24 Warnings, 13 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 2026.980 ; gain = 558.469 ; free physical = 5384 ; free virtual = 12534
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.980 ; gain = 0.000 ; free physical = 5384 ; free virtual = 12534
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/kawamata/git/nexysa7prj/japari/jagari/jagari.runs/synth_2/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  6 21:17:06 2020...
