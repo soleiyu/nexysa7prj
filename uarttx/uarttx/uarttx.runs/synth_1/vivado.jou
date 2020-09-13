@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Sep 13 16:22:28 2020
+# Process ID: 3121
+# Current directory: /home/kawamata/git/nexysa7prj/uarttx/uarttx/uarttx.runs/synth_1
+# Command line: vivado -log uarttx_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uarttx_top.tcl
+# Log file: /home/kawamata/git/nexysa7prj/uarttx/uarttx/uarttx.runs/synth_1/uarttx_top.vds
+# Journal file: /home/kawamata/git/nexysa7prj/uarttx/uarttx/uarttx.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source uarttx_top.tcl -notrace

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep 12 20:19:29 2020
+# Process ID: 5102
+# Current directory: /home/kawamata/git/nexysa7prj/uarttx
+# Command line: vivado
+# Log file: /home/kawamata/git/nexysa7prj/uarttx/vivado.log
+# Journal file: /home/kawamata/git/nexysa7prj/uarttx/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project uarttx /home/kawamata/git/nexysa7prj/uarttx/uarttx -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+add_files -norecurse /home/kawamata/git/nexysa7prj/uarttx/uarttx_top.sv
+add_files -fileset constrs_1 -norecurse /home/kawamata/git/nexysa7prj/uarttx/a7.xdc
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Sat Sep 12 20:21:24 2020] Launched synth_1...
+Run output will be captured here: /home/kawamata/git/nexysa7prj/uarttx/uarttx/uarttx.runs/synth_1/runme.log
