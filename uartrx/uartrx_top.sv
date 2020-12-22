@@ -79,7 +79,7 @@ always @(posedge clk) begin
 	
 	if (~rxenable) begin
 		cnt115k <= 10'b0;
-		clk115k <= 1'b0; 
+		clk115k <= 1'b1; 
 	end else if (cnt115k == 10'd433) begin
 		cnt115k <= 10'b0;
 		clk115k <= clk115k + 1'b1;

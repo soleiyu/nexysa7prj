@@ -1,0 +1,381 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 16351
+License: Customer
+
+Current time: 	Sat Sep 19 22:59:30 JST 2020
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Ubuntu
+OS Version: 5.4.0-47-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 3840x2160
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 407 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kawamata
+User home directory: /home/kawamata
+User working directory: /home/kawamata/git/nexysa7prj/uart115pll
+User country: 	JP
+User language: 	ja
+User locale: 	ja_JP
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/kawamata/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/kawamata/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/kawamata/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/kawamata/git/nexysa7prj/uart115pll/vivado.log
+Vivado journal file location: 	/home/kawamata/git/nexysa7prj/uart115pll/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-16351-rootage
+
+Xilinx Environment Variables
+----------------------------
+INTELFPGAOCLSDKROOT: /home/kawamata/intelFPGA_pro/20.1/hld
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	222 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 861 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1009 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 824 MB. GUI used memory: 55 MB. Current time: 9/19/20, 10:59:32 PM JST
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 112 MB (+115227kb) [00:00:23]
+// [Engine Memory]: 839 MB (+728250kb) [00:00:23]
+// f (cr): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 34 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "u"); // ac (Q, f)
+// Elapsed time: 17 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "uart115pll", true); // ac (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, f)
+// F (f): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "uarttx"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, f)
+setFileChooser("/home/kawamata/git/nexysa7prj/uart115pll/a7.xdc");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0); // w (O, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0, false, false, false, false, true); // w (O, f) - Double Click
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bB (f):  Create Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project uart115pll . -part xc7a100tcsg324-1 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 885 MB (+3771kb) [00:01:57]
+// WARNING: HEventQueue.dispatchEvent() is taking  1172 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 118 MB (+286kb) [00:01:58]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Command: 'file mkdir /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/new'
+// Tcl Message: file mkdir /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/new 
+// Tcl Message: close [ open /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/new/uarttx.v w ] 
+// HMemoryUtils.trashcanNow. Engine heap size: 911 MB. GUI used memory: 65 MB. Current time: 9/19/20, 11:01:22 PM JST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/new/uarttx.v 
+// I (cr): Define Module: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse /home/kawamata/git/nexysa7prj/uart115pll/a7.xdc 
+dismissDialog("New Project"); // f (cr)
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 184 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cr)
+// [Engine Memory]: 944 MB (+15488kb) [00:03:29]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 65 MB. Current time: 9/19/20, 11:02:57 PM JST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// Elapsed time: 18 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField (ay, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 16, "Clocking Wizard", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 16, "Clocking Wizard", 0, false); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 16); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 16, "Clocking Wizard", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// l (cr):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [Engine Memory]: 1,114 MB (+129666kb) [00:03:58]
+// r (cr): Customize IP: addNotify
+dismissDialog("Customize IP"); // l (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 88 MB. Current time: 9/19/20, 11:03:22 PM JST
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 11 seconds
+selectRadioButton((HResource) null, "PLL"); // cP
+// Elapsed time: 16 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cU (E, r)
+setText("CLKOUT1 REQUESTED OUT FREQ", "11.52", true); // D (cV, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 16 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cU (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "PLLE2 Settings", 3); // cU (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cU (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cU (E, r)
+// Elapsed time: 18 seconds
+selectCheckBox((HResource) null, "reset", false); // g (bM, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "locked", false); // g (bM, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,140 MB. GUI used memory: 95 MB. Current time: 9/19/20, 11:04:52 PM JST
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cU (E, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cP
+// Elapsed time: 10 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cU (E, r)
+// [GUI Memory]: 133 MB (+9611kb) [00:07:19]
+// Elapsed time: 147 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "18.432", true); // D (cV, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 33 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "36.864", true); // D (cV, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cU (E, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cP
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cU (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cU (E, r)
+// [GUI Memory]: 155 MB (+15851kb) [00:09:08]
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cP
+// Elapsed time: 19 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cU (E, r)
+setText("CLKOUT1 REQUESTED OUT FREQ", "11.52", true); // D (cV, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 23 seconds
+selectCheckBox((HResource) null, "reset", false); // g (bM, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "locked", false); // g (bM, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// [GUI Memory]: 172 MB (+9463kb) [00:10:07]
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {11.52} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {78.125} CONFIG.CLKOUT1_JITTER {213.446} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips clk_wiz_0] 
+// bB (cr):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,168 MB. GUI used memory: 96 MB. Current time: 9/19/20, 11:09:32 PM JST
+// [Engine Memory]: 1,181 MB (+11267kb) [00:10:09]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 20 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all clk_wiz_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 4 clk_wiz_0_synth_1 
+// Tcl Message: [Sat Sep 19 23:09:54 2020] Launched clk_wiz_0_synth_1... Run output will be captured here: /home/kawamata/git/nexysa7prj/uart115pll/uart115pll.runs/clk_wiz_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,255 MB (+15625kb) [00:10:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,255 MB. GUI used memory: 113 MB. Current time: 9/19/20, 11:10:07 PM JST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cr)
+dismissDialog("Re-customize IP"); // r (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Show IP Hierarchy"); // A (cr)
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,334 MB. GUI used memory: 138 MB. Current time: 9/19/20, 11:10:32 PM JST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// [Engine Memory]: 1,334 MB (+17530kb) [00:11:09]
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cr)
+// [GUI Memory]: 188 MB (+7885kb) [00:11:09]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uarttx.v", 2); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,388 MB. GUI used memory: 138 MB. Current time: 9/19/20, 11:11:17 PM JST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,404 MB (+3487kb) [00:14:59]
+// Elapsed time: 389 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0.v", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uarttx.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uarttx.v", 2); // i (h, cr)
+// Elapsed time: 11 seconds
+selectButton(PAResourceAtoD.AbstractFileView_CLOSE, (String) null); // k (B, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uarttx (uarttx.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("uarttx.v", 148, 613); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0.v", 2); // i (h, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("clk_wiz_0.v", 101, 1138); // C (w, cr)
+typeControlKey((HResource) null, "clk_wiz_0.v", 'c'); // C (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uarttx.v", 3); // i (h, cr)
+typeControlKey((HResource) null, "uarttx.v", 'v'); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,407 MB. GUI used memory: 139 MB. Current time: 9/19/20, 11:18:57 PM JST
+// Elapsed time: 55 seconds
+selectCodeEditor("uarttx.v", 150, 655); // ch (w, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_SOURCE_FILE
+// Elapsed time: 23 seconds
+setText("PAResourceOtoP.OpenSourceTreeTablePanel_OPEN_SOURCE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,429 MB. GUI used memory: 139 MB. Current time: 9/19/20, 11:21:22 PM JST
+// [GUI Memory]: 198 MB (+803kb) [00:42:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,438 MB. GUI used memory: 137 MB. Current time: 9/19/20, 11:51:22 PM JST

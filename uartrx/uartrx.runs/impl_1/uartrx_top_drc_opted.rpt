@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Sun Sep 13 20:38:56 2020
+| Date         : Wed Sep 16 11:20:33 2020
 | Host         : rootage running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_drc -file uartrx_top_drc_opted.rpt -pb uartrx_top_drc_opted.pb -rpx uartrx_top_drc_opted.rpx
 | Design       : uartrx_top

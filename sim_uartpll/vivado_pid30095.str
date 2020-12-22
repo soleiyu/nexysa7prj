@@ -1,0 +1,153 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 30095
+License: Customer
+
+Current time: 	Wed Sep 16 16:33:51 JST 2020
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Ubuntu
+OS Version: 5.4.0-47-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 3840x2160
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 408 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kawamata
+User home directory: /home/kawamata
+User working directory: /home/kawamata/git/nexysa7prj/sim_uartpll
+User country: 	JP
+User language: 	ja
+User locale: 	ja_JP
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/kawamata/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/kawamata/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/kawamata/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/kawamata/git/nexysa7prj/sim_uartpll/vivado.log
+Vivado journal file location: 	/home/kawamata/git/nexysa7prj/sim_uartpll/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-30095-rootage
+
+Xilinx Environment Variables
+----------------------------
+INTELFPGAOCLSDKROOT: /home/kawamata/intelFPGA_pro/20.1/hld
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	227 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 872 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Error: 'Can't open project 'uartrtx'. Please verify that the project still exists. (Open Project)'
+// HMemoryUtils.trashcanNow. Engine heap size: 839 MB. GUI used memory: 57 MB. Current time: 9/16/20, 4:33:53 PM JST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/kawamata/git/nexysa7prj/sim_uartpll/uartrtx.xpr");
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: /home/kawamata/git/nexysa7prj/sim_uartpll/uartrtx.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+106300kb) [00:00:57]
+// [Engine Memory]: 983 MB (+878930kb) [00:00:57]
+// WARNING: HEventQueue.dispatchEvent() is taking  1621 ms.
+// Tcl Message: open_project /home/kawamata/git/nexysa7prj/sim_uartpll/uartrtx.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/kawamata/git/nexysa7prj/sim_uartlight' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,064 MB. GUI used memory: 100 MB. Current time: 9/16/20, 4:34:44 PM JST
+// [Engine Memory]: 1,065 MB (+34432kb) [00:00:58]
+// Project name: uartrtx; location: /home/kawamata/git/nexysa7prj/sim_uartpll; part: xc7a100tcsg324-1
+// 'i' command handler elapsed time: 5 seconds
+// [GUI Memory]: 119 MB (+10647kb) [00:00:59]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// Elapsed time: 14 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7, "Basic Elements", 0, true); // L (O, cr) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7); // L (O, cr)
+// Elapsed time: 120 seconds
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Accumulators ;  ;  ;  ; ", 8); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Accumulators ;  ;  ;  ; ", 8); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Counters ;  ;  ;  ; ", 11); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Counters ;  ;  ;  ; ", 11); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Memory Elements ;  ;  ;  ; ", 13); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Memory Elements ;  ;  ;  ; ", 13); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Registers, Shifters & Pipelining ;  ;  ;  ; ", 15); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Registers, Shifters & Pipelining ;  ;  ;  ; ", 15); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Registers, Shifters & Pipelining ;  ;  ;  ; ", 15); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Registers, Shifters & Pipelining ;  ;  ;  ; ", 15); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7); // L (O, cr)
+// Elapsed time: 14 seconds
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Digital Signal Processing ;  ;  ;  ; ", 19); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Digital Signal Processing ;  ;  ;  ; ", 19, "Digital Signal Processing", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Digital Signal Processing ;  ;  ;  ; ", 19, "Digital Signal Processing", 0, false); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Digital Signal Processing ;  ;  ;  ; ", 19); // L (O, cr)
+// Elapsed time: 101 seconds
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Accumulators ;  ;  ;  ; ", 8); // L (O, cr)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Accumulators ;  ;  ;  ; ", 8); // L (O, cr)
+// [GUI Memory]: 129 MB (+3929kb) [00:05:58]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7, "Basic Elements", 0, true); // L (O, cr) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7, "Basic Elements", 0, true); // L (O, cr) - Node
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Basic Elements ;  ;  ;  ; ", 7, "Basic Elements", 0, true, false, false, false, false, true); // L (O, cr) - Double Click - Node

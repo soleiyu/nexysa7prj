@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep 16 16:33:40 2020
+# Process ID: 30095
+# Current directory: /home/kawamata/git/nexysa7prj/sim_uartpll
+# Command line: vivado uartrtx.xdp
+# Log file: /home/kawamata/git/nexysa7prj/sim_uartpll/vivado.log
+# Journal file: /home/kawamata/git/nexysa7prj/sim_uartpll/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/kawamata/git/nexysa7prj/sim_uartpll/uartrtx.xpr
+INFO: [Project 1-313] Project file moved from '/home/kawamata/git/nexysa7prj/sim_uartlight' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1

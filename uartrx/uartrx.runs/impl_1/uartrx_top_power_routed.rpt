@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Sun Sep 13 20:39:14 2020
+| Date             : Wed Sep 16 11:20:52 2020
 | Host             : rootage running 64-bit Ubuntu 18.04.5 LTS
 | Command          : report_power -file uartrx_top_power_routed.rpt -pb uartrx_top_power_summary_routed.pb -rpx uartrx_top_power_routed.rpx
 | Design           : uartrx_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.579        |
+| Total On-Chip Power (W)  | 4.593        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 4.459        |
+| Dynamic (W)              | 4.473        |
 | Device Static (W)        | 0.120        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 64.1         |
-| Junction Temperature (C) | 45.9         |
+| Max Ambient (C)          | 64.0         |
+| Junction Temperature (C) | 46.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.304 |      231 |       --- |             --- |
-|   LUT as Logic |     0.271 |      111 |     63400 |            0.18 |
+| Slice Logic    |     0.328 |      231 |       --- |             --- |
+|   LUT as Logic |     0.295 |      112 |     63400 |            0.18 |
 |   Register     |     0.016 |       75 |    126800 |            0.06 |
 |   CARRY4       |     0.011 |        4 |     15850 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.286 |      196 |       --- |             --- |
+| Signals        |     0.276 |      198 |       --- |             --- |
 | I/O            |     3.870 |       18 |       210 |            8.57 |
 | Static Power   |     0.120 |          |           |                 |
-| Total          |     4.579 |          |           |                 |
+| Total          |     4.593 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.631 |       0.598 |      0.034 |
+| Vccint    |       1.000 |     0.645 |       0.611 |      0.034 |
 | Vccaux    |       1.800 |     0.162 |       0.142 |      0.020 |
 | Vcco33    |       3.300 |     1.097 |       1.093 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| uartrx_top |     4.459 |
+| uartrx_top |     4.473 |
 +------------+-----------+
 
 

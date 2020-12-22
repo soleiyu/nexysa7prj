@@ -1,0 +1,92 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Sep 16 13:51:59 2020
+| Host         : rootage running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_control_sets -verbose -file uartrtx_top_control_sets_placed.rpt
+| Design       : uartrtx_top
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    75 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    14 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              11 |            3 |
+| Yes          | No                    | No                     |              43 |           21 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+-------------------------------+------------------+------------------+----------------+
+|   Clock Signal   |         Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------+-------------------------------+------------------+------------------+----------------+
+|  clk115k_reg_n_0 | rxv[0]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 | rxv[1]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 | rxv[2]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 | rxv[4]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 | rxv[5]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 | rxv[6]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 | rxv[7]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 | rxv[3]_i_1_n_0                |                  |                1 |              1 |
+|  clk115k_reg_n_0 |                               |                  |                2 |              4 |
+|  clk115k_reg_n_0 | FSM_onehot_rxstate[2]_i_1_n_0 |                  |                2 |              4 |
+|  clk_IBUF_BUFG   | ledval0                       |                  |                2 |              7 |
+|  clk_IBUF_BUFG   |                               | rxenable11_in    |                3 |             11 |
+|  clk_IBUF_BUFG   |                               |                  |                5 |             19 |
+|  clk_IBUF_BUFG   | rxval[1][7]_i_1_n_0           |                  |                9 |             24 |
++------------------+-------------------------------+------------------+------------------+----------------+
+
+

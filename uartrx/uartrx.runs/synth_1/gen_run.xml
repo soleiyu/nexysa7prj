@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1599997077">
-  <File Type="VDS-TIMINGSUMMARY" Name="uartrx_top_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1600222775">
+  <File Type="PA-TCL" Name="uartrx_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="uartrx_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="uartrx_top.vds"/>
+  <File Type="RDS-UTIL" Name="uartrx_top_utilization_synth.rpt"/>
   <File Type="RDS-DCP" Name="uartrx_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="uartrx_top_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="uartrx_top_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="uartrx_top_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="uartrx_top.vds"/>
-  <File Type="REPORTS-TCL" Name="uartrx_top_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="uartrx_top_timing_summary_synth.pb"/>
-  <File Type="PA-TCL" Name="uartrx_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/uartrx_top.sv">
